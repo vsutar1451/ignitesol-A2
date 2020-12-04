@@ -24,26 +24,26 @@ GAE and send us the link.
 https://ignitesol-app.herokuapp.com  
 ## Instructions to run the API:  
 ### 1. Type the comand below to clone the project.  
-git clone https://github.com/vsutar1451/ignitesol-A2  
+`git clone https://github.com/vsutar1451/ignitesol-A2`  
 
 ### 2.Create a file .env in the following format  
 
-SESSION_TYPE=memcached 
+`SESSION_TYPE=memcached 
 
 SECRET_KEY=c0o1v2i3d4jgh798ujh98 
 
 FLASK_ENV=development 
 
-UPLOAD_FOLDER=static/uploads 
+UPLOAD_FOLDER=static/uploads`
 
 
 
 
 
 ### 3. Install the Requirements
-pip3 install -r requirements.txt  
+`pip3 install -r requirements.txt`  
 ### 4. Run the Flask app
-flask run 
+`flask run` 
 
 ## Technology  
 
