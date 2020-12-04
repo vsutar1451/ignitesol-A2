@@ -28,13 +28,13 @@ https://ignitesol-app.herokuapp.com
 
 ### 2.Create a file .env in the following format  
 
-`SESSION_TYPE=memcached `
+>>SESSION_TYPE=memcached
 
-`SECRET_KEY=c0o1v2i3d4jgh798ujh98` 
+>>SECRET_KEY=c0o1v2i3d4jgh798ujh98 
 
-`FLASK_ENV=development` 
+>>FLASK_ENV=development
 
-`UPLOAD_FOLDER=static/uploads`
+>>UPLOAD_FOLDER=static/uploads
 
 
 
@@ -58,7 +58,7 @@ https://ignitesol-app.herokuapp.com
 
 
   
-## STEPS to deploy the API on Heroku:
+## STEPS to deploy the web app on Heroku:
 **STEP 1 :** Create a virtual environment with pipenv and install Flask and Gunicorn.</br>
 >>`pipenv install flask gunicorn` 
 
