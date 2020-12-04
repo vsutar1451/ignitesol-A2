@@ -28,13 +28,10 @@ https://ignitesol-app.herokuapp.com
 
 ### 2.Create a file .env in the following format  
 
->>SESSION_TYPE=memcached
-
->>SECRET_KEY=c0o1v2i3d4jgh798ujh98 
-
->>FLASK_ENV=development
-
->>UPLOAD_FOLDER=static/uploads
+>>SESSION_TYPE=memcached</br>
+>>SECRET_KEY=c0o1v2i3d4jgh798ujh98 </br>
+>>FLASK_ENV=development</br>
+>>UPLOAD_FOLDER=static/uploads</br>
 
 
 
