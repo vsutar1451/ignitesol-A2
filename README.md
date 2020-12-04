@@ -28,13 +28,13 @@ https://ignitesol-app.herokuapp.com
 
 ### 2.Create a file .env in the following format  
 
-`SESSION_TYPE=memcached 
+`SESSION_TYPE=memcached `
 
-SECRET_KEY=c0o1v2i3d4jgh798ujh98 
+`SECRET_KEY=c0o1v2i3d4jgh798ujh98` 
 
-FLASK_ENV=development 
+`FLASK_ENV=development` 
 
-UPLOAD_FOLDER=static/uploads`
+`UPLOAD_FOLDER=static/uploads`
 
 
 
@@ -60,30 +60,30 @@ UPLOAD_FOLDER=static/uploads`
   
 ## STEPS to deploy the API on Heroku:
 **STEP 1 :** Create a virtual environment with pipenv and install Flask and Gunicorn.</br>
->> pipenv install flask gunicorn 
+>>`pipenv install flask gunicorn` 
 
 **STEP 2 :** Create a “Procfile” and write the following code.</br>
->> web: gunicorn  app:app 
+>> `web: gunicorn  app:app` 
 
 **STEP 3 :** Create “runtime.txt” and write the following code.</br>
->> Python-3.7.2 
+>> `python-3.7.2` 
 
 
 **STEP 4 :** Run the vitual environment.</br>
->> pipenv shell 
+>> `pipenv shell` 
 
 **STEP 5 :** Initialize an empty repo, add the files in the repo and commit the changes.</br>
->> $ git init </br>
->> $ git add .  
+>> `$ git init` </br>
+>> `$ git add .`  
 
 **STEP 6 :** Login to heroku CLI using</br>
->> heroku login  </br>
+>> `heroku login`  </br>
 
 Now, give the name of your web app, in my case i have given ignitesol</br>
->> $ heroku create ignitesol-app  
+>> `$ heroku create ignitesol-app`  
 
 **STEP 7 :** Push your code from local to the heroku remote.</br>
->> $ git push heroku master  
+>> `$ git push heroku master`  
 
 
 
