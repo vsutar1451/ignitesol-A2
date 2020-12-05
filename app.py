@@ -12,8 +12,6 @@ from flask import make_response, jsonify
 
 
 
-app = Flask(__name__)
-app.config.from_object("config.Config")
 
 
 def custom_error(message, status_code): 
