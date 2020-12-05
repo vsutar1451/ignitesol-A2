@@ -9,7 +9,7 @@ import math
 import json
 from bson.json_util import dumps
 
-
+'''
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
@@ -24,6 +24,7 @@ def handle_exception(e):
         "description": e.description,
     })
     response.content_type = "application/json"
+    '''
     return response
 
 @app.route('/hello')
