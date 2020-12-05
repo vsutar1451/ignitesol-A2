@@ -1,7 +1,5 @@
 from flask import Flask,request, render_template
 from flask import jsonify
-app = Flask(__name__)
-app.config.from_object("config.Config")
 from flask import json
 from werkzeug.exceptions import HTTPException
 import random
@@ -9,9 +7,8 @@ import string
 import math
 from flask import make_response, jsonify
 
-
-
-
+app = Flask(__name__)
+app.config.from_object("config.Config")
 
 
 def custom_error(message, status_code): 
