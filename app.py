@@ -24,8 +24,8 @@ def handle_exception(e):
         "description": e.description,
     })
     response.content_type = "application/json"
-    '''
-    return response
+   
+    return response '''
 
 @app.route('/hello')
 def index():
