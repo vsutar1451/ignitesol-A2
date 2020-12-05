@@ -1,4 +1,4 @@
-# IGNITE SOLUTIONS TASK-2
+# IGNITE SOLUTIONS TASK-2 (Creating and deploying API)
 
 Q.1. Hello World API
 The attached file, hello_world_api.yml, provides the specification of a simple Hello World API that supports a single REST
@@ -21,7 +21,7 @@ this webpage will work only on your machine.
 GAE and send us the link.  
 
 ## CLICK ON THE LINK BELOW TO USE THE API HOSTED ON HEROKU:</br>
-https://ignitesol-app.herokuapp.com  
+https://ignitesol-app.herokuapp.com/hello?language=english 
 ## Instructions to run the API:  
 ### 1. Type the comand below to clone the project.  
 `git clone https://github.com/vsutar1451/ignitesol-A2`  
@@ -43,19 +43,15 @@ https://ignitesol-app.herokuapp.com
 `flask run` 
 
 ## Technology  
-
-### Front End
-- HTML5
-- CSS3  
-
-### Back End
+ 
 - Python 3
 - Flask  
+- Heroku (For Deploying API) 
 
 
 
   
-## STEPS to deploy the web app on Heroku:
+## STEPS to deploy the API on Heroku:
 **STEP 1 :** Create a virtual environment with pipenv and install Flask and Gunicorn.</br>
 >>`pipenv install flask gunicorn` 
 
