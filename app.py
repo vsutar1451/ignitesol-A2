@@ -1,4 +1,5 @@
 from flask import Flask,request, render_template
+from flask import jsonify
 app = Flask(__name__)
 app.config.from_object("config.Config")
 from flask import json
@@ -7,6 +8,9 @@ import random
 import string
 import math
 
+
+app = Flask(__name__)
+app.config.from_object("config.Config")
 
 
 @app.errorhandler(404)
@@ -26,7 +30,7 @@ def handle_exception(e):
 
     return response
 
-@app.route('/hello' methods)
+@app.route('/hello',methods=['GET','POST'])
 def index():
     try:
         dict = {"hindi":"Namastey sansar","english":"Hello world","french":"Bonjour le monde"}
