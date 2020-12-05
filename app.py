@@ -40,20 +40,18 @@ def index():
             result_str += str(digits[index])
         print(result_str)
         if lang in dict:
-            data1={}
-            data1['Message ID']=result_str
-            data1['Message_text']=data[lang]
-            return json.dumps(data1)   
+            data={}
+            data['Message ID']=result_str
+            data['Message_text']=dict[lang]
+            return json.dumps(data)   
         else:
-            error_message = "The requested language is not supported"
-            return json.dumps(error_message)
+            data1={}
+            data1['error_message']="The requested language is not supported"
+            return json.dumps(data1)
     except Exception as error:
         print('In exception :', error)
         return error
 
-@app.route('/')
-def main():
-    return render_template("main.html")
 
 
 
