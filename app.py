@@ -6,10 +6,9 @@ from werkzeug.exceptions import HTTPException
 import random
 import string
 import math
-import json
-from bson.json_util import dumps
 
-'''
+
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
@@ -24,10 +23,10 @@ def handle_exception(e):
         "description": e.description,
     })
     response.content_type = "application/json"
-   
-    return response '''
 
-@app.route('/hello')
+    return response
+
+@app.route('/hello' methods)
 def index():
     try:
         dict = {"hindi":"Namastey sansar","english":"Hello world","french":"Bonjour le monde"}
@@ -44,11 +43,11 @@ def index():
             data={}
             data['Message ID']=result_str
             data['Message_text']=dict[lang]
-            return json.dumps(data)   
+            return jsonify(data)  
         else:
             data1={}
             data1['error_message']="The requested language is not supported"
-            return json.dumps(data1)
+            return jsonify(data1)
     except Exception as error:
         print('In exception :', error)
         return error
