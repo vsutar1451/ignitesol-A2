@@ -7,16 +7,17 @@ from werkzeug.exceptions import HTTPException
 import random
 import string
 import math
+from flask import make_response, jsonify
+
+
 
 
 app = Flask(__name__)
 app.config.from_object("config.Config")
 
 
-@app.errorhandler(404)
-def page_not_found(e):
-    return render_template('404.html'), 404
-
+def custom_error(message, status_code): 
+    return make_response(jsonify(message), status_code)
 
 @app.errorhandler(HTTPException)
 def handle_exception(e):
