@@ -41,8 +41,8 @@ def index():
         print(result_str)
         if lang in dict:
             data={}
-            data['Message ID']=result_str
-            data['Message_text']=dict[lang]
+            data['ID']=result_str
+            data['msgText']=dict[lang]
             return jsonify(data)  
         else:
             data1={}
