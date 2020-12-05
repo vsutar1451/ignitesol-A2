@@ -6,6 +6,8 @@ from werkzeug.exceptions import HTTPException
 import random
 import string
 import math
+import json
+from bson.json_util import dumps
 
 
 @app.errorhandler(404)
@@ -38,10 +40,13 @@ def index():
             result_str += str(digits[index])
         print(result_str)
         if lang in dict:
-            return render_template("/index.html",data=dict[lang],ID=result_str)   
+            data1={}
+            data1['Message ID']=result_str
+            data1['Message_text']=data[lang]
+            return json.dumps(data1)   
         else:
             error_message = "The requested language is not supported"
-            return render_template("/error.html",data=error_message)
+            return json.dumps(error_message)
     except Exception as error:
         print('In exception :', error)
         return error
